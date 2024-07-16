@@ -31,8 +31,100 @@ a {
 }
 
 .section-title {
-    margin: 0;
+    margin-bottom: 20px;
     font-size: 22px;
+}
+
+/* filtres */
+
+.filters {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.filtersTitle {
+    margin: 0 2rem 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.filtersButtonIcons {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+}
+
+.filtersClass {
+    margin: 0 1rem;
+}
+
+
+.infoResults{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+}
+
+
+
+.filtersButton {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}
+
+.searchFiltersFilterWrapiconIcon {
+    color: #0065FC;
+}
+
+.searchResultWrapicon {
+    color: #0065FC;
+}
+
+.searchResultText {
+    margin: 0;
+}
+
+.infoResultsGroup {
+    height: 2rem;
+    width: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.searchResultText p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* cards */
+
+.hebergements-cards{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -41,6 +133,12 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    transition-duration: 0.2s;
+}
+
+.card:hover{
+    transition: ease-in-out;
+    transform: scale(1.02);
 }
 
 
@@ -124,7 +222,7 @@ h2{
     height: 49px;
     border-radius: 15px;
     border: 1px solid #f2f2f2;
-    margin:30px 0;
+    margin: 30px 0;
 }
 
 .container-fa{
@@ -141,7 +239,7 @@ h2{
   margin: 0 auto;
    left: 16px;
    top: 14px;
-    font-size: 23px;
+    font-size: 18px;
     
 }
 
@@ -152,6 +250,9 @@ h2{
     font-family: "Raleway";
     font-size: 18px;
     font-weight: 700;
+    outline: none;
+    border: none;
+    opacity: .5;
 }
 
 .button-city{
@@ -165,7 +266,7 @@ h2{
     color: #fff;
     text-align: center;
     font-weight: 700;
-    
+    border: none;
 }
 
 
@@ -188,22 +289,23 @@ h2{
    
 }
 
-.hebergements-cards .card {
-  
-   width: 243px ;
-    margin: 13px;
+.hebergements-flex{
+    display: flex;
 
+gap: 20px;
+flex-wrap: wrap;
 }
 
+
+
 .hebergements-cards img {
-    width: 243px;
+   
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
 }
 
 .hebergements-cards .card-content {
-    width: 67%;
+    width: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -223,6 +325,19 @@ h2{
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
+
+.afficher p{
+    margin: 0 0 15px 44px;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.13px;
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
 
 
 
@@ -271,17 +386,45 @@ h2{
     margin-bottom: 5px;
 }
 
+/* Activités */
+.partie-activites {
+    margin-top: 60px;
+}
 
+.activites h2 {
+    margin-bottom: 15px;
+}
+
+.les-activites {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.activites .card {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+.activites img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
 /* Footer */
 .container-footer{
-    width: 1126px;
+   
     margin: 0 auto;
     display: flex;
     /* justify-content: space-between; */
-    flex-wrap: wrap;
+    margin-top: 33px;
     background-color: #f2f2f2;
-    padding: 0px 25px;
+    border-radius: 20px;
 }
 
 .a-propos,.nos-hebergements,.assistance{
@@ -325,9 +468,29 @@ h2{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+ 
+        .activites .card {
+            width: 45%;
+            margin: 12px;
+        }
+    
+
+    .container-footer{
+        width: 100%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .les-activites {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
     /* ... */
 }
