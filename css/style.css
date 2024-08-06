@@ -26,9 +26,30 @@ body {
 }
 
 a {
-    color: inherit;
+    
     text-decoration: none;
 }
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    }
+
+    header nav a {
+        padding: 50px 25px;
+        color: black;
+        border-top: 2px transparent solid;
+        transition: .3s;
+        }
+
+
+        header nav a:hover, .selected {
+            color: blue;
+            border-top: 2px blue solid;
+            }
+
+            
+
 
 .section-title {
     margin-bottom: 20px;
@@ -482,15 +503,72 @@ margin-inline-end: 0px;
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
 
-    .les-activites {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    .logo{
+        text-align: center;
+        margin: auto;
     }
 
+    .container-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 30px 0;
+        max-width: 1440px;
+
+justify-content: space-between;
+        }
+
+        main, header, footer {
+            width: auto;
+            padding: 0;
+            }
+   
+header nav{
+display: flex;
+flex-direction: row;
+width: 100%;
+align-items: center;
+gap: 30px;
+margin: 30px 0;
+}
+
+header nav a {
+    width: 50%;
+    padding: 14px;
+    border-bottom: 3px grey solid;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+    .container-search {
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+        border: 1px solid grey;
+        border-radius: 20px;
+        }
+
+    
+    .activites .card{
+        width: 100%;
+        
+    }
+
+    .hebergements-cards.card{
+        width: 100%;
+    }
 
     /* ... */
 }
