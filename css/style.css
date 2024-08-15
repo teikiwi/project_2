@@ -326,7 +326,7 @@ Hebergements And Populaires
 
 
 .hebergements-cards img {
-   
+   background: cover;
     height: 136px;
     border-radius: 20px;
 }
@@ -528,6 +528,7 @@ margin-inline-end: 0px;
 
     .main-container{
         padding: 0 ;
+   
     }
 
     main{
