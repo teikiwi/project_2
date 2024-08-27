@@ -43,22 +43,31 @@
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
 
+            <!-- Champs de recherche géolocalisable -->
             <div class="container-search">
                 <div class="container-fa"><i class="fa-solid fa-location-dot"></i></div>
                 <input class="search-city" type="text" placeholder="Marseille, France">
                 <button class="button-city" type="submit">Rechercher</button>
             </div>
 
+            <div class="container-search-min" >
+                <div class="container-fa"><i class="fa-solid fa-location-dot"></i></div>
+                <input class="search-city" type="text" placeholder="Marseille, France">
+                <button class="button-city-min" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+
             <!-- Partie filtres -->
             <div class="filters">
                 <h2 class="filtersTitle">Filtres</h2>
 
+                <div class="container-buttons">
                 <div class="filtersButton">
                     <div class="filtersButtonIcons">
                     <i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>
+                    </div>
+                    <span class="filtersClass">Economique</span>
                 </div>
-                <span class="filtersClass">Economique</span>
-            </div>
 
             <div class="filtersButton">
                 <div class="filtersButtonIcons">
@@ -77,6 +86,7 @@
         <div class="filtersButtonIcons">
             <i class="fas fa-dog searchFiltersFilterWrapiconIcon" aria-hidden="true"></i>    </div>
     <span class="filtersClass">Animaux autorisés</span>
+</div>
 </div>
             </div>
 

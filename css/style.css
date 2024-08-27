@@ -239,12 +239,18 @@ h2{
 .container-search{
     
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 377px;
     height: 49px;
     border-radius: 15px;
     border: 1px solid #f2f2f2;
     margin: 30px 0;
+}
+
+.container-search-min{
+    display: none;
 }
 
 .container-fa{
@@ -287,6 +293,19 @@ h2{
     font-size: 18px;
     color: #fff;
     text-align: center;
+    font-weight: 700;
+    border: none;
+}
+
+.button-city-min{
+    
+    width: 49px;
+    height: 49px;
+    border-radius: 15px;
+    background:#0065FC;
+    font-family: "Raleway";
+    font-size: 18px;
+    color: #fff;
     font-weight: 700;
     border: none;
 }
@@ -437,7 +456,7 @@ margin-inline-end: 0px;
 }
 
 .activites img {
-    height: 400px;
+    height: 180px;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
@@ -453,7 +472,8 @@ margin-inline-end: 0px;
     margin-top: 33px;
     background-color: #f2f2f2;
     border-radius: 20px;
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .a-propos,.nos-hebergements,.assistance{
@@ -571,13 +591,47 @@ header nav a:hover, .selected{
     border-bottom: 2px blue solid;
     border-top: none;
 }
-    .container-search {
+
+    .container-search{
+        display: none;
+    }
+
+    .container-search-min {
+        display: flex;
         width: 100%;
-        display: inline-flex;
-        flex-direction: row;
         /* border: 1px solid grey; */
         border-radius: 20px;
+        justify-content: space-between;
+        width: 377px;
+        height: 49px;
+        border-radius: 15px;
+        border: 1px solid #f2f2f2;
+        margin: 30px 0;
         }
+
+        .search-city::placeholder {
+            text-align: left;
+            }
+
+.filters{
+    width: 100%;
+}
+
+.container-button{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+
+.filtersTitle{
+    display: block;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 22px;
+
+}
 
 
 .card{
@@ -585,10 +639,14 @@ header nav a:hover, .selected{
         
     }
 
+.card-title{
+    font-size: 19px;
+}
+
 .hebergements-cards{
    display: block;
     width: 100%;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -611,14 +669,15 @@ header nav a:hover, .selected{
     width: 100%;
 }
 .container{
-    text-align: center;
+    text-align: left;
+    padding: 0 0 0 20px;
 }
 
 .container-footer{
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 0 0 0 40px;
 }
 
 
