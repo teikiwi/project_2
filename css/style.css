@@ -310,6 +310,11 @@ h2{
     border: none;
 }
 
+.container-button{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 /****** 
 Hebergements And Populaires 
