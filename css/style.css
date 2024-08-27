@@ -596,13 +596,12 @@ header nav a:hover, .selected{
         display: none;
     }
 
-    .container-search-min {
+.container-search-min {
         display: flex;
         width: 100%;
         /* border: 1px solid grey; */
         border-radius: 20px;
         justify-content: space-between;
-        width: 377px;
         height: 49px;
         border-radius: 15px;
         border: 1px solid #f2f2f2;
