@@ -320,6 +320,7 @@ Hebergements And Populaires
 
 .hebergements-and-populaires {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
 }
 
