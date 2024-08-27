@@ -109,6 +109,11 @@ header nav {
     font-weight: bold;
 }
 
+.filtersButton:hover{
+    background-color: #f3f8ff;
+    transform: scale(1.015);
+}
+
 .searchFiltersFilterWrapiconIcon {
     color: #0065FC;
 }
