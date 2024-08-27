@@ -144,10 +144,7 @@ header nav {
 
 /* cards */
 
-.hebergements-cards{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .card {
   
@@ -337,10 +334,6 @@ Hebergements And Populaires
 
 
 /****** Hebergements ***********/
-.hebergements {
-    width: 65%;
-   
-}
 
 .hebergements-flex{
     display: flex;
@@ -356,7 +349,7 @@ Hebergements And Populaires
    background: cover;
     height: 136px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 15px 15px 0 0;
 }
 
 .hebergements-cards .card-content {
